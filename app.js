@@ -11,8 +11,8 @@ const app = express();
 const PORT = 5000;
 const upload = multer({ dest: 'uploads/' });
 // app.use('/uploads', express.static('uploads'));
-// const URI = "mongodb+srv://rambaburai911:Ram911@zomato.bilturd.mongodb.net/face_recognition?retryWrites=true&w=majority";
-const URI = "mongodb://127.0.0.1:27017/face_recognition"
+const URI = "mongodb+srv://rambaburai911:Ram911@zomato.bilturd.mongodb.net/face_recognition?retryWrites=true&w=majority";
+// const URI = "mongodb://127.0.0.1:27017/face_recognition"
 // const host = "localhost";
 
 const APIRoutes = require("./Routes/APIRoutes");

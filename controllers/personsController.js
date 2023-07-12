@@ -91,6 +91,7 @@ exports.getPersonImage = (req, res) => {
         return res.status(404).send('Image not found.');
       }
       res.set('Content-Type', 'image/jpeg');
+      console.log("dir=",__dirname )
       file = path.join(__dirname, person.imagePath)
       file = file.replace('\\controllers', '')
       console.log(file, typeof(file))
